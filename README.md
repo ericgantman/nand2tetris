@@ -7,8 +7,6 @@ The Nand2Tetris course, formally known as *The Elements of Computing Systems*, i
 - **Software**: Understanding assemblers, virtual machines, and operating systems.
 - **High-Level Languages**: Designing and implementing functional programming languages.
 
-Through this course, I’ve gained invaluable insights into how computers work at a fundamental level.
-
 ## Projects
 Here’s a brief overview of the projects I’ve completed:
 
