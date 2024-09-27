@@ -1,0 +1,14 @@
+#!/bin/sh
+DEFAULT_ASSEMBLER_PATH="../../tools/Assembler"
+CUSTOM_ASSEMBLER_PATH="./Main.py"
+COMPARE_SCRIPT_PATH="./compare.py"
+INPUT_ASM_FILE="input.asm"
+
+# Run the default assembler
+java -jar "$DEFAULT_ASSEMBLER_PATH" "$INPUT_ASM_FILE"
+
+# Run your custom assembler
+python "$CUSTOM_ASSEMBLER_PATH" "$INPUT_ASM_FILE"
+
+# Compare the generated files
+python "$COMPARE_SCRIPT_PATH" "${INPUT_ASM_FILE%.asm}_default.hack" "${INPUT_ASM_FILE%.asm}.hack"
